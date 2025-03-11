@@ -17,6 +17,6 @@ test.describe('Home Page', () =>{
       await loginPage.login();
       await homePage.clickOnAddToCart();
       await expect(homePage.cartBadge).toHaveText('1');
-      // await expect(homePage.title).toBeVisible();
+      await expect(homePage.title).toBeVisible();
     });
 });
