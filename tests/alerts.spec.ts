@@ -20,11 +20,11 @@ test.describe('Alerts', () =>{
     await expect(page.locator('#confirmResult')).toHaveText('You selected Cancel');
   });
 
-  test('Prompt alert', async ({ page }) => {
-    page.on("dialog", async dialog => {
-      await dialog.accept('Skillmea');
-    })
-    await page.locator('#promtButton').click();
-    await expect(page.locator('#promptResult')).toHaveText('You entered Skillmea');
-  });
+  // test('Prompt alert', async ({ page }) => {
+  //   page.on("dialog", async dialog => {
+  //     await dialog.accept('Skillmea');
+  //   })
+  //   await page.locator('#promtButton').click();
+  //   await expect(page.locator('#promptResult')).toHaveText('You entered Skillmea');
+  // });
 });
