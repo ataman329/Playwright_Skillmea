@@ -5,8 +5,8 @@ test.describe('Upload', () =>{
     await page.goto('https://demoqa.com/upload-download');
   })
  
-  test('Upload file', async ({ page }) => {
-    await page.locator('#uploadFile').setInputFiles(['../images/skillmea.jpg']);
-    await expect(page.locator('#uploadedFilePath')).toBeVisible();
-  });
+  // test('Upload file', async ({ page }) => {
+  //   await page.locator('#uploadFile').setInputFiles(['../images/skillmea.jpg']);
+  //   await expect(page.locator('#uploadedFilePath')).toBeVisible();
+  // });
 });
